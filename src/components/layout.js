@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 // import styled from "styled-components"
-import Header from "./firstPage/header"
+import Header from "../firstPage/header"
 import "./layout.css"
 import PageOne from "../pages/PageOne"
 

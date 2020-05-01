@@ -2,10 +2,15 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import MobileMenu from "../firstPage/MobileMenu"
+import { mediaSmall, mediaXs } from "../components/Screen"
 
 const Header = () => (
   <MainDiv>
     <StyledLink to="/">LOGO</StyledLink>
+    <MobileMenuDiv>
+      <MobileMenu />
+    </MobileMenuDiv>
     <Menu>
       <li>
         <MenuLink to="/">Hem</MenuLink>
@@ -35,9 +40,17 @@ Header.defaultProps = {
 
 export default Header
 
+const MobileMenuDiv = styled.div`
+  display: flex;
+
+  ${mediaSmall} {
+    display: none;
+  }
+`
 const StyledLink = styled(Link)`
   font-size: 30px;
   font-family: Rokkitt, serif;
+  margin-left: 10px;
 `
 const MainDiv = styled.div`
   margin-top: 15px;
@@ -46,10 +59,14 @@ const MainDiv = styled.div`
   justify-content: space-between;
 `
 const Menu = styled.ul`
-  display: flex;
+  display: none;
   align-items: center;
   list-style: none;
   margin: 0;
+
+  ${mediaXs} {
+    display: flex;
+  }
 
   li {
     margin: 0;

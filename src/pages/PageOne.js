@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import house9Img from "../components/firstPage/images/house9.jpeg"
+import house16Img from "../images/house16.jpg"
 import StyleButton from "../components/Button"
 import { vf, th } from "../components/colors"
-import TjänsterMap from "../components/firstPage/TjästerMap"
-import LowerPart from "../components/firstPage/LowerPart"
+import TjänsterMap from "../firstPage/TjästerMap"
+import LowerPart from "../firstPage/LowerPart"
 const PageOne = () => {
   return (
     <Div>
@@ -56,6 +56,7 @@ const Div = styled.div`
   }
   h4 {
     text-align: center;
+    font-weight: normal;
   }
 `
 
@@ -82,12 +83,13 @@ const Title = styled.h1`
 const MainDiv = styled.div`
   background-repeat: no-repeat;
   background-position: center;
-
-  background-image: url(${house9Img});
+  background-image: url(${house16Img});
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 2;
+
   h3 {
     color: #ffff;
   }
