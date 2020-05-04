@@ -89,11 +89,10 @@ const WrapperLink = styled(Link)`
 `
 const BorderDiv = styled.div`
   border: 3px solid #f5f5f5;
-  margin: 15px;
   border-radius: 30px;
-  width: 300px;
+  width: 350px;
   padding: 20px;
-
+  margin: 20px;
   svg {
     margin-bottom: 20px;
   }
@@ -109,8 +108,6 @@ const MainDiv = styled.div`
   flex-wrap: wrap;
   display: flex;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
   justify-content: center;
   svg {
     font-size: 50px;
