@@ -2,9 +2,9 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
-import { faAlignJustify } from "@fortawesome/free-solid-svg-icons"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby"
-import { vf } from "../components/colors"
+import { seaGreen } from "../colors"
 
 const MobileMenu = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -22,7 +22,7 @@ const MobileMenu = () => {
   return (
     <MainDiv>
       <StyledButtonOpen onClick={handleOnOpen}>
-        <FontAwesomeIcon icon={faAlignJustify} />
+        <FontAwesomeIcon icon={faBars} />
       </StyledButtonOpen>
 
       <>
@@ -63,6 +63,10 @@ const MenuLink = styled(Link)`
   font-weight: bold;
   align-self: center;
   margin-top: 30px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const MainDiv = styled.div`
@@ -71,8 +75,8 @@ const MainDiv = styled.div`
 const BodyDiv = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${vf};
-  position: absolute;
+  background: ${seaGreen};
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;

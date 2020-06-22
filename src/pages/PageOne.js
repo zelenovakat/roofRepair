@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import house16Img from "../images/house16.jpg"
 import StyleButton from "../components/Button"
-import { vf, th } from "../components/colors"
-import TjänsterMap from "../firstPage/TjästerMap"
-import LowerPart from "../firstPage/LowerPart"
+import { seaGreen, carrotOrange } from "../components/colors"
+import ServiceMap from "../components/firstPage/ServiceMap"
+import LowerPart from "../components/firstPage/LowerPart"
 import { MarginDiv } from "../components/auxiliary"
 const PageOne = () => {
   return (
@@ -38,9 +38,9 @@ const PageOne = () => {
         </MarginDiv>
       </Text>
       <h1>Vära tjänster</h1>
-      <Tjänster>
-        <TjänsterMap />
-      </Tjänster>
+      <div>
+        <ServiceMap />
+      </div>
       <MarginDiv>
         <LowerText>SÅ HÅR JOBBAR VI</LowerText>
         <h4>Altid kanstnadsfia offerter och hembesök!</h4>
@@ -55,7 +55,7 @@ const PageOne = () => {
 export default PageOne
 
 const LowerText = styled.h1`
-  color: ${th};
+  color: ${carrotOrange};
 `
 
 const Div = styled.div`
@@ -67,12 +67,9 @@ const Div = styled.div`
     font-weight: normal;
   }
 `
-
-const Tjänster = styled.div``
-
 const Text = styled.div`
-  color: #ffff;
-  background-color: ${vf};
+  color: #fff;
+  background-color: ${seaGreen};
   h2 {
     padding-top: 50px;
   }
@@ -82,7 +79,7 @@ const Text = styled.div`
 `
 const Title = styled.h1`
   margin-top: 100px;
-  color: #ffff;
+  color: #ffffff;
   font-size: 35px;
 `
 const MainDiv = styled.div`
@@ -96,7 +93,7 @@ const MainDiv = styled.div`
   opacity: 2;
 
   h3 {
-    color: #ffff;
+    color: #ffffff;
   }
 
   button {
