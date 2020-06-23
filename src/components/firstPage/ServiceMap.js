@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import { Tjänster } from "./Tjänster"
+import { Services } from "./Services"
 
-const TjänsterMap = () => {
-  const mappedTjänster = Tjänster.map((typesOfJobs, i) => {
+const ServiceMap = () => {
+  const mappedServices = Services.map((typesOfJobs, i) => {
     return (
       <MainDiv key={i}>
         <img src={typesOfJobs.cover} alt="" />
@@ -14,12 +14,12 @@ const TjänsterMap = () => {
 
   return (
     <>
-      <MappedDiv>{mappedTjänster}</MappedDiv>
+      <MappedDiv>{mappedServices}</MappedDiv>
     </>
   )
 }
 
-export default TjänsterMap
+export default ServiceMap
 
 const MainDiv = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const MainDiv = styled.div`
     margin-bottom: 0;
   }
   h3 {
-    color: white;
+    color: #ffffff;
     position: absolute;
     align-self: center;
   }

@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import { vf } from "./colors"
+import { seaGreen } from "./colors"
 
 export const BUTTON_STYLES = {
   default: "default",
@@ -28,12 +28,12 @@ const StyledButton = styled.button`
   ${p =>
     p.lookLike === BUTTON_STYLES.default &&
     `
-    background: ${vf};
-    color: #fff;
+    background: ${seaGreen};
+    color: #ffffff;
 
     &:hover {
-      background: ${vf};
-      color: #fff;
+      background: ${seaGreen};
+      color: #ffffff;
       text-decoration: none;
     }
   `}

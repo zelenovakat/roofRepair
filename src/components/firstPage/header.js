@@ -1,9 +1,8 @@
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import MobileMenu from "../firstPage/MobileMenu"
-import { mediaSmall, mediaXs } from "../components/Screen"
+import MobileMenu from "./MobileMenu"
+import { mediaSmall, mediaXs } from "../Screen"
 
 const Header = () => (
   <MainDiv>
@@ -30,13 +29,6 @@ const Header = () => (
     </Menu>
   </MainDiv>
 )
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
 
@@ -70,6 +62,10 @@ const Menu = styled.ul`
 
   li {
     margin: 0;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 
   a {
@@ -80,5 +76,5 @@ const Menu = styled.ul`
 
 const MenuLink = styled(Link)`
   padding: 16px;
-  color: black;
+  color: #000000;
 `

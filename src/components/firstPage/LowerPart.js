@@ -8,7 +8,7 @@ import { faCity } from "@fortawesome/free-solid-svg-icons"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { th } from "../components/colors"
+import { carrotOrange } from "../colors"
 const LowerPart = () => {
   return (
     <MainDiv>
@@ -111,7 +111,7 @@ const MainDiv = styled.div`
   justify-content: center;
   svg {
     font-size: 50px;
-    color: ${th};
+    color: ${carrotOrange};
   }
 `
 const Menu = styled.ul`

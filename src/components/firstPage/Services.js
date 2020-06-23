@@ -1,13 +1,13 @@
-import house6Img from "../images/house6.jpeg"
-import house7Img from "../images/house7.jpeg"
-import house17Img from "../images/house17.jpeg"
-import house18Img from "../images/house18.jpeg"
-import house19Img from "../images/house19.jpeg"
-import house9Img from "../images/house9.jpeg"
-import house11Img from "../images/house11.jpeg"
-import house14Img from "../images/house14.jpeg"
+import house6Img from "../../images/house6.jpeg"
+import house7Img from "../../images/house7.jpeg"
+import house17Img from "../../images/house17.jpeg"
+import house18Img from "../../images/house18.jpeg"
+import house19Img from "../../images/house19.jpeg"
+import house9Img from "../../images/house9.jpeg"
+import house11Img from "../../images/house11.jpeg"
+import house14Img from "../../images/house14.jpeg"
 
-export const Tjänster = [
+export const Services = [
   {
     id: 1,
     title: "TEGELTAK",
