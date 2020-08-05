@@ -15,33 +15,33 @@ export const Services = [
   },
   {
     id: 2,
-    title: "PLÅTSLAGERI",
+    title: "BETONGPANNOR",
     cover: house11Img,
   },
   {
     id: 3,
-    title: "TAKPAPP",
-    cover: house17Img,
+    title: "TAKFÖNSTER",
+    cover: house7Img,
   },
   {
     id: 4,
-    title: "FASADRENOVERING",
+    title: "TRÄFASAD",
     cover: house18Img,
   },
   {
     id: 5,
+    title: "TRP PLÅT",
+    cover: house18Img,
+  },
+  {
+    id: 6,
     title: "SNÖRASSKYDD",
     cover: house19Img,
   },
   {
-    id: 6,
+    id: 7,
     title: "TAKSÄKERHET",
     cover: house9Img,
-  },
-  {
-    id: 7,
-    title: "SNÖSKOTTNING",
-    cover: house7Img,
   },
   {
     id: 8,

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby"
-import { seaGreen } from "../colors"
+import { darkGreen } from "../colors"
 
 const MobileMenu = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -45,7 +45,7 @@ const MobileMenu = () => {
                 <MenuLink to="/coming-soon">ROT-avdrag</MenuLink>
               </li>
               <li>
-                <MenuLink to="/contact-page">Referencser</MenuLink>
+                <MenuLink to="/contact-page">Referenser</MenuLink>
               </li>
             </ul>
           </BodyDiv>
@@ -75,7 +75,7 @@ const MainDiv = styled.div`
 const BodyDiv = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${seaGreen};
+  background: ${darkGreen};
   position: fixed;
   top: 0;
   right: 0;

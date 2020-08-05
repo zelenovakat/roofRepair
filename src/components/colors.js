@@ -1,2 +1,5 @@
 export const seaGreen = "rgb(33,150,83)"
 export const carrotOrange = "rgb(247,142,30)"
+export const bgColor = "#D6BF95"
+export const darkGreen = "#324D4D"
+export const activeBlue = "#4690A1"

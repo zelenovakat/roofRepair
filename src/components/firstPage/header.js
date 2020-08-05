@@ -3,31 +3,40 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import MobileMenu from "./MobileMenu"
 import { mediaSmall, mediaXs } from "../Screen"
+import LogoImg from "../../images/logo.png"
+import { MainContainer } from "../styles"
+import { bgColor, darkGreen, activeBlue } from "../colors"
 
 const Header = () => (
-  <MainDiv>
-    <StyledLink to="/">LOGO</StyledLink>
-    <MobileMenuDiv>
-      <MobileMenu />
-    </MobileMenuDiv>
-    <Menu>
-      <li>
-        <MenuLink to="/">Hem</MenuLink>
-      </li>
-      <li>
-        <MenuLink to="/">Våra tjänster</MenuLink>
-      </li>
-      <li>
-        <MenuLink to="/">Hur vi jobbar</MenuLink>
-      </li>
-      <li>
-        <MenuLink to="/">ROT-avdrag</MenuLink>
-      </li>
-      <li>
-        <MenuLink to="/">Referencser</MenuLink>
-      </li>
-    </Menu>
-  </MainDiv>
+  <MainContainer background={bgColor}>
+    <MainDiv>
+      <LogoLink to="/">
+        <img src={LogoImg} alt="AstiTak logotyp" width="400" height="400" />
+      </LogoLink>
+
+      <MobileMenuDiv>
+        <MobileMenu />
+      </MobileMenuDiv>
+
+      <Menu>
+        <li>
+          <MenuLink to="/">Hem</MenuLink>
+        </li>
+        <li>
+          <MenuLink to="/">Våra tjänster</MenuLink>
+        </li>
+        <li>
+          <MenuLink to="/">Hur vi jobbar</MenuLink>
+        </li>
+        <li>
+          <MenuLink to="/">ROT-avdrag</MenuLink>
+        </li>
+        <li>
+          <MenuLink to="/">Referenser</MenuLink>
+        </li>
+      </Menu>
+    </MainDiv>
+  </MainContainer>
 )
 
 export default Header
@@ -39,16 +48,17 @@ const MobileMenuDiv = styled.div`
     display: none;
   }
 `
-const StyledLink = styled(Link)`
-  font-size: 30px;
-  font-family: Rokkitt, serif;
-  margin-left: 10px;
+const LogoLink = styled(Link)`
+  img {
+    height: 100px;
+    width: auto;
+    margin: 0;
+  }
 `
 const MainDiv = styled.div`
-  margin-top: 15px;
-  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
+  padding: 16px 0;
 `
 const Menu = styled.ul`
   display: none;
@@ -62,15 +72,19 @@ const Menu = styled.ul`
 
   li {
     margin: 0;
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
   }
 
   a {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: ${darkGreen};
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: ${activeBlue};
+    }
   }
 `
 

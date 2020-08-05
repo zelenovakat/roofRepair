@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import { seaGreen } from "./colors"
+import { darkGreen, activeBlue } from "./colors"
 
 export const BUTTON_STYLES = {
   default: "default",
@@ -22,18 +22,31 @@ const StyledButton = styled.button`
   display: block;
   transition: all 0.1s ease-in;
   text-decoration: none;
-  padding: 10px 50px;
+  padding: 16px 50px;
   border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  ${p =>
+    p.size === BUTTON_SIZES.large &&
+    `
+    font-size: 24px;
+  `}
 
   ${p =>
     p.lookLike === BUTTON_STYLES.default &&
     `
-    background: ${seaGreen};
-    color: #ffffff;
+    background: ${darkGreen};
+    color: #fff;
 
     &:hover {
-      background: ${seaGreen};
-      color: #ffffff;
+      background: ${activeBlue};
+      color: #fff;
       text-decoration: none;
     }
   `}
